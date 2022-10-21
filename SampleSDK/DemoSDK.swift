@@ -25,7 +25,7 @@ public struct FirstDemoSDK
     public static func webserviceCall(url:String, completion:@escaping([String:Any])->Void)
     {
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).response(completionHandler:
-                                                                                                                {
+        {
             response -> Void in
             switch response.result
             {
